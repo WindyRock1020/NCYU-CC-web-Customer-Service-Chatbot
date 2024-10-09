@@ -1,0 +1,122 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(28, 26, 28);
+    flex-direction: column;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width:100vw;
+    margin: auto;
+}
+.header{
+    color: white;
+}
+/* 聊天區塊樣式 */
+.chat-container {
+    width: 80vw;
+    height: 85vh;
+    margin: 0 1vw;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.chat-output{
+    height: 82vh;
+    overflow-y: scroll;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.user-message {
+    max-width: 50%;
+    float: right;  /* 右側浮動 */
+    clear: both;   /* 清除浮動效果 */
+    padding: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background-color: rgb(167, 113, 255);
+    display: block;
+}
+
+.chatbot-message {
+    max-width: 50%;
+    float: left;   /* 左側浮動 */
+    clear: both;   /* 清除浮動效果 */
+    padding: 10px;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background-color: rgb(124, 49, 247);  
+    color: #fff;
+    display: block;
+    white-space: pre-line;
+    
+}
+
+/* 輸入框和按鈕樣式 */
+.input-container {
+    position: fixed;  /* 固定定位 */
+    bottom: 0;        /* 放置於視窗底部 */
+    width: 80vw;      /* 寬度為100% */
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);  /* 添加一點陰影 */
+    display: flex;    /* 使用flex佈局 */
+    align-items: center;  /* 垂直置中 */
+    margin: 10px 0;
+    z-index: 999;     /* 確保在最上層 */
+}
+
+.user-input {
+    box-sizing: border-box;
+    background-color:  rgb(57, 43, 57);
+    width: 90vw;
+    height: 50px;
+    padding: 2%;
+    border: none;  
+    border-radius: 10px;  
+    margin-right: 1%;
+    color: #fff;
+    font-size: 18px;
+}
+
+.user-input:focus {
+    outline: bold;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);  
+}
+
+.send-button {
+    padding: 10px 15px;
+    background-color: rgb(124, 49, 247);
+    color: #fff;
+    border-radius: 10px;  
+    cursor: pointer;
+    border: none;
+}
+/* 滾動條樣式 */
+.chat-output::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* 軌道樣式 */
+.chat-output::-webkit-scrollbar-track {
+    background-color: rgb(28, 26, 28);
+    border-radius: 50px;
+}
+
+/* 滾動滑塊樣式 */
+.chat-output::-webkit-scrollbar-thumb {
+    background-color: rgb(147, 126, 181);
+    border-radius: 50px;
+}
+
+/* 滑塊hover樣式 */
+.chat-output::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(129, 75, 191);
+}
+
+
