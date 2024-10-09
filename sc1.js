@@ -1,5 +1,6 @@
-const assistantId = 'asst_sDdUZb3BL7k2PiqdkKVwrLT4';
+const assistantId = '請修改這裡';
 const apiKey = '請修改這裡';
+// 目前已經關閉功能，無法得到正確回答
 let threadId;
 
 function sleep(ms) {
